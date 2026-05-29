@@ -24,10 +24,10 @@
 - [Tech Stack](#-tech-stack)
 - [Dataset](#-dataset)
 - [Project Structure](#-project-structure)
+- [Research Paper](#-research-paper)
 <!-- - [Getting Started](#-getting-started) -->
 <!-- - [Results](#-results) -->
-<!-- - [Research Paper](#-research-paper)
-- [Contributing](#-contributing) -->
+<!-- -[Contributing](#-contributing) -->
 <!-- - [License](#-license) -->
 
 ---
@@ -49,18 +49,18 @@ The result: **99.96% accuracy** with only **5 misclassifications out of 12,598 t
 
 | Metric | Score |
 |---|---|
-| **Accuracy** | 99.96% |
-| **Precision** | 99.97% |
-| **Recall** | 99.95% |
-| **F1-Score** | 99.96% |
+| **Accuracy** | 99.98% |
+| **Precision** | 99.98% |
+| **Recall** | 99.97% |
+| **F1-Score** | 99.97% |
 | **AUC-ROC** | 1.0000 |
 
 ### Confusion Matrix (Test Set — 12,598 records)
 
 |  | Predicted Normal | Predicted Attack |
 |---|---|---|
-| **Actual Normal** | 6,733 ✅ | 2 ❌ |
-| **Actual Attack** | 3 ❌ | 5,860 ✅ |
+| **Actual Normal** | 6,734 ✅ | 1 ❌ |
+| **Actual Attack** | 2 ❌ | 5,861 ✅ |
 
 ---
 
@@ -140,10 +140,6 @@ ELBIDS/
 ├── notebooks/
 │   └── IDS2.ipynb             # Main pipeline notebook
 │
-├── models/                    # Saved model artifacts (auto-generated)
-│   ├── autoencoder.h5
-│   └── stacking_classifier.pkl
-│
 ├── outputs/                   # Results, plots, confusion matrices
 │
 ├── requirements.txt
@@ -153,6 +149,19 @@ ELBIDS/
 
 ---
 
+## 📄 Research Paper
+
+This project is accompanied by a full engineering research monograph submitted for peer review.
+
+> **"Ensemble Learning-Based Intrusion Detection System with Hybrid Feature Fusion and Autoencoder-Based Dimensionality Reduction"**
+
+Key contributions:
+- Multi-modal fusion of structured and unstructured network security data
+- Non-linear dimensionality reduction via symmetric deep autoencoder
+- Heterogeneous stacking ensemble with stratified cross-validation to prevent data leakage
+- Benchmarked against state-of-the-art IDS architectures (Zhang et al. 2023, Kumar & Malik 2024, Al-Siri et al. 2024)
+
+---
 <!-- ## 🚀 Getting Started
 
 ### 1. Clone the Repository
