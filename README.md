@@ -88,7 +88,7 @@ The result: **99.96% accuracy** with only **5 misclassifications out of 12,598 t
 ┌────────────────▼────────────────────────────────┐
 │       STACKING ENSEMBLE CLASSIFIER              │
 │  Level-0: XGBoost | Random Forest | LogReg      │
-│  Level-1: Meta-XGBoost (5-Fold Stratified CV)   │
+│  Level-1: Meta-LR (5-Fold Stratified CV)   │
 └────────────────┬────────────────────────────────┘
                  │
          ┌───────▼───────┐
